@@ -3,63 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>About Me</title>
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    
 </head>
 
 
-  <!-- Nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-info">
-    <a class="navbar-brand font-weight-bolder">Alison Williamson</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link font-weight-bold text-dark" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link font-weight-bold text-dark" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link font-weight-bold text-dark" href="portfolio.html">Portfolio</a>
-        </li>
-      </ul>
-    </div>
+<body class="py-3 my-5">
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-info">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fixed-navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="fixed-navbar">
+        <ul class="navbar-nav mr-auto mt-2">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle p-1 mx-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              <i class="fas fa-users"> Connect</i>
+            </a>
+            <div class="dropdown-menu">
+              <h4 class="dropdown-header connects font-weight-bold">
+                <i class="fas fa-users"> Connect With Me </i>
+              </h4>
+              <div class="dropdown-divider"></div>
+              <div id="connect-drop" class="row no-gutters mx-auto justify-content-center m-0 mt-md-3">
+                  <div class="col-4 text-center mx-auto">
+                    <figure class="figure">
+                      <a title="View my GitHub profile" href="https://github.com/alisonwilliamson">
+                        <img src="placeholder" class="figure-img navbar-img img-thumbnail" alt="Github">
+                        <figcaption class="figure-caption text-center connects"><i class="fab fa-github"> GitHub</i></figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="col-4 text-center mx-auto">
+                    <figure class="figure">
+                      <a title="View my LinkedIn profile" href="www.linkedin.com/in/alison-williamson1">
+                        <img src="placeholder" class="figure-img navbar-img img-thumbnail" alt="LinkedIn">
+                        <figcaption class="figure-caption text-center connects"><i class="fab fa-linkedin"> LinkedIn</i></figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                  <div class="col-4 text-center mx-auto">
+                    <figure class="figure">
+                      <a title="View my resume pdf" href="placeholder">
+                        <img src="placeholder" class="figure-img navbar-img img-thumbnail" alt="Resume PDF">
+                        <figcaption class="figure-caption text-center connects"><i class="fas fa-file"> Resume</i></figcaption>
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+            </div>
+          </li>
+          <li class="nav-item active mx-2">
+            <a class="nav-link p-1 disabled" href="index.html">
+              <i class="fas fa-portrait"> About Me</i> 
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link p-1" href="port.html">
+              <i class="fas fa-laptop-code"> Portfolio</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    <span class="navbar-brand" >Alison Williamson</span>
   </nav>
-   
-<section>
-  <!-- container forms the grid -->
-  <div class="container"> 
-    <div class="row p-1 mt-4">
-      <div class="col-sm-12">
 
-      <!-- start of card -->
-      <div class="card border-0">
-        <div class="card-body text-info font-weight-bolder ml-n3">
-            <header class="text-size">About Me</header>
-        </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-11">
+          <div class="card shadow">
+            
+            <div class="card-body p-3">
+              <div class="row mb-3">
+                <div class="col-12 pl-3 mb-3">
+                  <h1 class="card-title pl-3 text-info font-weight-bolder">Alison Williamson </h1>
+                  <h6 class="card-subtitle text-muted pl-3 ">Full Stack Web Developer</h6>
+                </div>
+              </div>
+              <div class="row p-2">
+                <div class="col-md-4">
+                  <img id="about-image" class="img-thumbnail" src="assets/images/me.jpg" alt="Alison Williamson Bio Image">
+
+                </div>
+                <div class="col-md-8 pl-3">
+                    <h4 class="card-title pl-3 text-center shadow text-info font-weight-bolder">Summary</h4>
+                    <p class="card-text text-center p-3 mb-3">
+                      Full-stack web developer leveraging a BA in Media and Information Technology from Michigan State University 
+                      with a focus in creating human centered technology. Strong work ethic that comes from years of working 2+ jobs 
+                      while going to school full time and the ability to juggle competing priorities successfully. Strengths in hands 
+                      on learning, meeting deadlines, teamwork, positive problem solving attitude, and creative approaches. With every 
+                      project, my aim is to use my background in MIT to create web pages for an impactful user experience. Excited to work
+                      with a team to leverage my skills and build upon them to create high quality responsive web pages.
+                      </p>
+                    
+                    <h4 class="card-title pl-3 text-center shadow text-info font-weight-bolder">Skills</h4>
+                    <p class="card-text text-center p-3 mb-3">
+                      Currently earning a certificate in full stack development from Michigan State University in partnership with 
+                      Trilogy Education, with recently developed skills in HTML, CSS, JavaScript and the MERN stack.
+                    </p>
+                    
+
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <h4 class="card-title pl-3 text-info font-weight-bolder">Contact Me</h4>
+              <address class="pl-3 font-weight-bolder">
+                  Email:                     
+                    <a class="badge" href="mailto:williamson.alisonj@gmail.com" title="Draft new email to Alison Williamson">
+                    williamson.alisonj@gmail.com
+                  </a>
+                  <br>
+                  Mobile: 
+                  <a class="badge" href="tel:+1-248-921-5978" title="Call or Text Alison Williamson">1 (248) 921-5978</a>
+                  <br>
+                  Detroit Metropolitian Area, MI
+              </address>
+            </div>
+          </div>
+          <!--/Card div -->
       </div>
-    </div>
+      <!--/Card column-->
+     </div>
   </div>
 
-    <!-- image thumbnail -->
-    <div class="row">
-      <div class="col-sm-3 mb-4 p-3">
-        <img class="img img-thumbnail img-fluid" src="Assets/Images/me.jpg" alt="picture of Alison">
-      </div>
-
-      <!-- body text in card -->
-      <div class="col-sm-9 p-2">
-        <p>I have a bachelor's degree in Media and Information Technology from MSU with an emphasis on user experience. I am also currently enrolled in the MSU fullstack flex bootcamp.</p>
-        <p>My skills include photography, Adobe Photoshop, Lightroom, After Effects, InDesign, Premiere Pro, and Illustrator. I'm also skilled at social media strategy and marketing, and have taken classes covering Python, HTML, and CSS.</p>
-      </div>
-    </div>
-  </div>
-  
-</section>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- My JavaScript -->
+  <script src="assets/script.js"></script>
+</body>
 </html>
