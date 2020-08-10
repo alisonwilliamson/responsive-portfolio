@@ -1,10 +1,3 @@
-### GITHUB PAGES NOT WORKING
-When open live server from my code everything works perfectly, but when deployed through github pages nothing seems to be working....
-
-
-
-
-
 ## Features
 
 I used Bootstrap CSS Framework to create a mobile responsive portfolio.
@@ -49,4 +42,6 @@ The website includes...
 
   * Link to the GitHub repository
 
-  * Screenshot of the deployed applicatio
+  * Screenshot of the deployed application
+
+  Here is the link to the working website: https://alisonwilliamson.github.io/responsive-portfolio/
